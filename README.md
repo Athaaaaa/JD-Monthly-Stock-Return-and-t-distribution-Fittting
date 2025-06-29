@@ -21,38 +21,16 @@ This project involves financial econometrics analysis of **JD.com (京东)** sto
 
 1. **Monthly Log Returns**:
 
-```r
-JD_data <- read.csv("JD.csv")
-JD_data$Return <- c(NA, diff(log(JD_data$Adj.Close)))
-JD_data <- na.omit(JD_data)
-```
 
 2. **Custom Generalized t-distribution PDF**:
 
-```r
-dt_G <- function(x, params) {
-  location <- params[1]
-  scale <- params[2]
-  shape <- params[3]
-  dt((x - location) / scale, df = shape) / scale
-}
-```
 
-3. **MLE Estimation with `optim()`**:
 
-```r
-neg_log_likelihood <- function(params, data) {
-  log_density <- sapply(data, function(x) log(dt_G(x, params)))
-  -sum(log_density)
-}
-mle_result <- optim(par = c(mean, sd, 5), fn = neg_log_likelihood, ...)
-```
+3. **MLE Estimation**:
+
 
 4. **fitdistrplus Comparison**:
 
-```r
-fit_result <- fitdist(JD_data$Return, "dt_G_fitdistr", start = list(...))
-```
 
 ## Results
 
