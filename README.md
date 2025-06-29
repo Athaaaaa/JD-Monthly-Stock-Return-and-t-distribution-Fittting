@@ -1,7 +1,5 @@
 # JD-Monthly-Stock-Return-and-t-distribution-Fittting
 
-# JD Monthly Stock Return Analysis and t-Distribution Fitting
-
 This project involves financial econometrics analysis of **JD.com (京东)** stock. It focuses on computing **monthly logarithmic returns** based on adjusted closing prices, and fitting the **generalized t-distribution** to the return data using **Maximum Likelihood Estimation (MLE)** and comparing it with **fitdistrplus** package results.
 
 ## Files Included
