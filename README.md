@@ -11,7 +11,7 @@ This project involves financial econometrics analysis of **JD.com (京东)** sto
 ## Features
 
 * Calculates **logarithmic monthly returns** using R
-* Implements **custom t-distribution fitting** via `optim()` function (no external packages)
+* Implements **custom t-distribution fitting** 
 * Compares results with the standard `fitdistrplus` package
 * Visual and textual analysis included in the report
 
@@ -20,7 +20,7 @@ This project involves financial econometrics analysis of **JD.com (京东)** sto
 1. **Monthly Log Returns**:
 
 
-2. **Custom Generalized t-distribution PDF**:
+2. **Custom Generalized t-distribution**:
 
 
 
